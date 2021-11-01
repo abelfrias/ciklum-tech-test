@@ -1,0 +1,17 @@
+@import './colors.scss';
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: $gradient-casino-background;
+    font-family: 'Helvetica Neue', arial, sans-serif;
+    font-size: 7px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+    height: 100%;
+}
