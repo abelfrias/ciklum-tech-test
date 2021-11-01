@@ -1,21 +1,15 @@
 import { h } from 'preact';
 
-import Button from '../../Atoms/Button'
-import infoIcon from '../../../assets/icons/info.png'
+import Button from '../../Atoms/Button';
+import infoIcon from '../../../assets/icons/info.png';
 import style from './style.scss';
 
 const GamePod = (props) => (
     <article class={style.gamepod}>
         <div>
+            <img src={infoIcon} alt="Info Icon" class={style.infoIcon}/>
             <div class={style.thumbnailWrapper}>
-                <img
-                    class={style.gameImage}
-                    src={props.thumbnailUrl}
-                    alt={props.name}/>
-                <img
-                    class={style.infoIcon}
-                    src={infoIcon}
-                    alt="Info Icon"/>
+                <img src={props.thumbnailUrl} alt={props.name} class={style.gameImage}/>
             </div>
             <div class={style.infoWrapper}>
                 <p class={style.supplier}>

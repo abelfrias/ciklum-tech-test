@@ -1,0 +1,8 @@
+@import '~style/colors.scss';
+
+.gamesGroup {
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 320px;
+    max-width: 1280px;
+}

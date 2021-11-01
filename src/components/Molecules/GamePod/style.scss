@@ -1,8 +1,9 @@
 @import '~style/colors.scss';
 
 .gamepod {
-    display: inline-block;
-    padding: 0 3rem;
+    display: inline-flex;
+    padding: 3rem 3rem 0 3rem;
+    margin-bottom: 2em;
 }
 
 .gamepod:hover {
@@ -12,14 +13,15 @@
 }
 
 .gamepod > div {
+    position: relative;
     display: flex;
     align-items: center;
     border-bottom: 1px solid transparentize($lottoland-white, 0.88);
-    padding: 3rem 0;
+    padding-bottom: 3rem;
 }
 
 .gamepod:hover > div {
-    border-bottom: none;
+    border-bottom-color: transparent;
 }
 
 .thumbnailWrapper {
@@ -61,7 +63,7 @@
 .name,
 .supplier,
 .stake {
-    margin: 4px 0;
+    margin: 0;
 }
 
 .supplier,
@@ -80,7 +82,7 @@
     position: absolute;
     left: 10px;
     top: 10px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .gamepod:hover .playButton {
