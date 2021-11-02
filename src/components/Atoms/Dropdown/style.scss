@@ -1,0 +1,41 @@
+@import '~style/colors.scss';
+
+.checkboxDropdown {
+    position: absolute;
+    display: inline-block;
+    background: $color-casino-base;
+    border-radius: 4px;
+    user-select: none;
+    z-index: 3;
+}
+
+.selection {
+    cursor: pointer;
+    padding: 1.3rem 2.4rem 0.9rem 2.4rem;
+}
+
+.selection > img {
+    margin-right: 1.1rem;
+}
+
+.checkboxDropdown.open .selection > img {
+    transform: rotate(180deg);
+}
+
+.selection > strong {
+    color: $color-ui-casino-02;
+    font-size: 2rem;
+}
+
+.checkboxDropdown.open .menu {
+    display: flex;
+    flex-direction: column;
+    background: $color-casino-base;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 2rem 5.4rem 5.2rem 5.4rem;
+}
+
+.checkboxDropdown:not(.open) .menu {
+    display: none;
+}

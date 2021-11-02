@@ -4,7 +4,7 @@ import GamePod from '../../Molecules/GamePod';
 import style from './style.scss';
 
 const GamesGroup = (props) => (
-    <section class={style.gamesGroup}>
+    <section class={`${props.class ? `${props.class} ` : ''}${style.gamesGroup}`}>
         {props.games.map((game, index) => (
             <GamePod
                 name={game.name}

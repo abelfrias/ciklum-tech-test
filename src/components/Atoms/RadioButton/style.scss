@@ -1,0 +1,19 @@
+@import '~style/colors.scss';
+
+.radioButton {
+    display: flex;
+}
+
+.radioButton span {
+    font-size: 2rem;
+    color: $color-ui-casino-02;
+    font-weight: lighter;
+}
+
+.radioButton input {
+    appearance: none;
+    background: transparent;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #44495A;
+}

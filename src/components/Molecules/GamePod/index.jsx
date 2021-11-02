@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
 import Button from '../../Atoms/Button';
-import infoIcon from '../../../assets/icons/info.png';
+import infoIcon from '../../../assets/icons/info.svg';
 import style from './style.scss';
 
 const GamePod = (props) => (
