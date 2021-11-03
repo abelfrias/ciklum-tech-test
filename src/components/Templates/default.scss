@@ -1,9 +1,8 @@
 @import '~style/colors.scss';
 
 .content {
-    padding: 6.14rem 12rem 0 12rem;
-    min-width: 320px;
     max-width: 1280px;
+    padding: 3.3rem 3.4rem 0 3.4rem;
     margin: auto;
 }
 
@@ -14,9 +13,26 @@
 .pageTitle {
     font-size: 3rem;
     color: $lottoland-white;
-    margin: 1rem 0 3.5rem 0;
+    margin: 1rem 0 2.57rem 0;
 }
 
 .gamesGroup {
-    margin: 9rem auto 0 auto;
+    margin: 11rem -3.4rem 0 -3.4rem;
+    padding-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .content {
+        padding: 6.14rem 12rem 0 12rem;
+    }
+
+    .pageTitle {
+        margin: 1rem 0 3.5rem 0;
+    }
+
+    .gamesGroup {
+        margin-top: 9rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

@@ -1,16 +1,11 @@
 @import '~style/colors.scss';
 
 .gamepod {
-    display: inline-flex;
-    flex: 1 0 0;
-    padding: 3rem 3rem 0 3rem;
-    margin-bottom: 2em;
-}
-
-.gamepod:hover {
-    background: transparentize($color-casino-base, 0.5);
-    cursor: pointer;
-    border-radius: 6px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: block;
+    padding-top: 1.7rem;
+    margin-bottom: 0;
 }
 
 .gamepod > div {
@@ -20,17 +15,18 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid transparentize($lottoland-white, 0.88);
-    padding-bottom: 3rem;
-}
-
-.gamepod:hover > div {
-    border-bottom-color: transparent;
+    padding-bottom: 1.7rem;
 }
 
 .thumbnailWrapper {
     position: relative;
     display: flex;
-    height: 96px;
+    height: 72px;
+}
+
+.thumbnailWrapper:before,
+.gameImage {
+    border-radius: 4px;
 }
 
 .thumbnailWrapper:before {
@@ -41,52 +37,100 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(180deg, rgba(26, 23, 30, 0.64) 0%, rgba(26, 23, 30, 0) 24.98%, rgba(26, 23, 30, 0) 74.94%, rgba(26, 23, 30, 0.64) 100%);
-    border-radius: 5px;
     z-index: 1;
 }
 
-.gameImage {
-    border-radius: 5px;
-}
-
 .infoIcon {
-    display: none;
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    z-index: 2;
 }
-
-.playButton {
-    opacity: 0;
-}
-
 
 .infoWrapper {
-    margin: 0 3.4rem;
+    margin: 0 2.3rem;
 }
 
 .name,
 .supplier,
 .stake {
     margin: 0;
+    font-size: 1.7rem;
 }
 
 .supplier,
 .stake {
     color: $color-ui-casino-03;
-    font-size: 2rem;
 }
 
 .name {
     color: $color-ui-casino-02;
-    font-size: 2.4rem;
 }
 
-.gamepod:hover .infoIcon {
-    display: block;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: 2;
-}
+@media only screen and (min-width: 768px) {
+    .gamepod {
+        display: inline-flex;
+        flex: 1 0 0;
+        padding-top: 3rem;
+        margin-bottom: 2em;
+    }
 
-.gamepod:hover .playButton {
-    opacity: 1;
+    .gamepod > div {
+        padding-bottom: 3rem;
+    }
+
+    .gamepod:hover {
+        background: transparentize($color-casino-base, 0.5);
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .gamepod:hover > div {
+        border-bottom-color: transparent;
+    }
+
+    .thumbnailWrapper {
+        height: 96px;
+    }
+
+    .thumbnailWrapper:before,
+    .gameImage {
+        border-radius: 6px;
+    }
+
+    .infoIcon {
+        display: none;
+    }
+
+    .infoWrapper {
+        margin: 0 3.4rem;
+    }
+
+    .stake,
+    .supplier {
+        font-size: 2rem;
+    }
+
+    .name {
+        font-size: 2.4rem;
+    }
+
+    .playButton {
+        opacity: 0;
+    }
+
+    .gamepod:hover .playButton {
+        opacity: 1;
+    }
+
+    .gamepod:hover .infoIcon {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 2;
+    }
 }
