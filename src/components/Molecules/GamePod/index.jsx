@@ -19,7 +19,7 @@ const GamePod = (props) => (
                     {props.name}
                 </h2>
                 <p class={style.stake}>
-                    €{props.stake} min. Stake
+                    €{props.stake.toFixed(2)} min. Stake
                 </p>
             </div>
             <Button class={style.playButton} text='PLAY'/>

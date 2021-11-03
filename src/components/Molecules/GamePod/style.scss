@@ -2,6 +2,7 @@
 
 .gamepod {
     display: inline-flex;
+    flex: 1 0 0;
     padding: 3rem 3rem 0 3rem;
     margin-bottom: 2em;
 }
@@ -15,7 +16,9 @@
 .gamepod > div {
     position: relative;
     display: flex;
+    flex: 1 0 0;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid transparentize($lottoland-white, 0.88);
     padding-bottom: 3rem;
 }
