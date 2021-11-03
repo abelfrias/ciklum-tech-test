@@ -8,7 +8,9 @@ const GamesGroup = (props) => {
     const [games, setGames] = useState([]);
 
     useEffect(() => {
-        setGames([...props.games]);
+        if (props.games) {
+            setGames([...props.games]);
+        }
     }, [JSON.stringify(props.games)]);
 
     return (

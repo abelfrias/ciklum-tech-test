@@ -48,11 +48,11 @@ const Dropdown = (props) => {
         <div {...generateClassProp()} ref={dropdownRef}>
             <div class={style.selection}  onclick={() => setOpen(!open)}>
                 <img src={caretIcon} alt="Caret"/>
-                <strong>{props.title}</strong>
+                <strong>{props.title || 'SELECT'}</strong>
             </div>
             <div class={style.menu}>
                 {
-                    props.options.map((option, index) => (
+                    props.options?.map((option, index) => (
                         <RadioButton
                             class={style.option}
                             name={props.name}
