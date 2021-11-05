@@ -10,21 +10,29 @@
 }
 
 .selection {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    padding: 1.3rem 2.4rem 0.9rem 2.4rem;
+    padding: 1.3rem 2.4rem 1.2rem 2.4rem;
 }
 
-.selection > img {
+.caretIcon {
+    display: inline-block;
+    font-family: 'll-icon-font';
+    font-style: normal;
+    color: $color-ui-casino-02;
+    font-size: 2rem;
     margin-right: 1.1rem;
 }
 
-.dropdown.open .selection > img {
+.dropdown.open .caretIcon {
     transform: rotate(180deg);
 }
 
-.selection > strong {
+.title {
     color: $color-ui-casino-02;
     font-size: 2rem;
+    font-weight: 900;
 }
 
 .dropdown.open .menu {

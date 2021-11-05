@@ -1,0 +1,147 @@
+module.exports = {
+    "FloatingDragon":{
+        "name":"FloatingDragon",
+        "displayName":"Floating Dragon",
+        "playURL":"/games/floatingdragon/play",
+        "image":"/cms/607016323a727d002be95180/icon-320by250_FloatingDragon.jpg",
+        "detailURL":"/games/floatingdragon",
+        "calloutText":"New Game",
+        "currencyData":{
+            "EUR":{
+                "minimumStake":0.60
+            }
+        },
+        "volatility":[
+            "Extreme"
+        ],
+        "provider":[
+            "Pragmatic"
+        ]
+    },
+    "GreekGods":{
+        "name":"GreekGods",
+        "displayName":"Greek Gods",
+        "playURL":"/games/greekgods/play",
+        "image":"/cms/5de91d2a91253e002efe72f7/icon-320and250_GreekGods.jpg",
+        "detailURL":"/games/greekgods",
+        "currencyData":{
+            "EUR":{
+                "minimumStake":0.20
+            }
+        },
+        "volatility":[
+            "High"
+        ],
+        "provider":[
+            "Pragmatic"
+        ]
+    },
+    "Ted":{
+        "name":"Ted",
+        "displayName":"Ted",
+        "playURL":"/games/ted/play",
+        "image":"/cms/5da43f208ffdb3002e46f0d4/icon-320and250_Ted.jpg",
+        "detailURL":"/games/ted",
+        "currencyData":{
+            "EUR":{
+                
+            }
+        },
+        "volatility":[
+            "Medium"
+        ],
+        "provider":[
+            "Blueprint"
+        ]
+    },
+    "LuckyWizard":{
+        "name":"LuckyWizard",
+        "displayName":"Lucky Wizard",
+        "playURL":"/games/luckywizard/play",
+        "image":"/cms/5bab9d950eb3580fac83392e/Icon_320and250_LuckyWizard.jpg",
+        "detailURL":"/games/luckywizard",
+        "currencyData":{
+            "EUR":{
+                "minimumStake":0.10
+            }
+        },
+        "volatility":[
+            "High"
+        ],
+        "provider":[
+            "RedTiger"
+        ]
+    },
+    "ElDoradoInfinityReels":{
+        "name":"ElDoradoInfinityReels",
+        "displayName":"El Dorado Infinity Reels",
+        "playURL":"/games/eldoradoinfinityreels/play",
+        "image":"/cms/6038d5bdf3c415002aef6262/icon-320by250_ElDoradoInfinityReels.jpg",
+        "detailURL":"/games/eldoradoinfinityreels",
+        "calloutText":"NEW GAME",
+        "currencyData":{
+            "EUR":{
+                "minimumStake":0.30
+            }
+        },
+        "provider":[
+            "Yggdrasil"
+        ]
+    },
+    "WingsOfRiches":{
+        "name":"WingsOfRiches",
+        "displayName":"Wings of Riches",
+        "playURL":"/games/wingsofriches/play",
+        "image":"/cms/5df118a4ba6c3e002cb74fe7/icon-320and250_WingsOfRiches.jpg",
+        "detailURL":"/games/wingsofriches",
+        "currencyData":{
+            "EUR":{
+                "minimumStake":0.50
+            }
+        },
+        "volatility":[
+            "Low"
+        ],
+        "provider":[
+            "Netent"
+        ]
+    },
+    "BookOfCrazyChicken":{
+        "name":"BookOfCrazyChicken",
+        "displayName":"Book of Crazy Chicken",
+        "playURL":"/games/bookofcrazychicken/play",
+        "image":"/cms/5e6a5f178b11d3002c154f67/icon-320and250_BookOfCrazyChicken.jpg",
+        "detailURL":"/games/bookofcrazychicken",
+        "calloutText":"New Game",
+        "currencyData":{
+            "EUR":{
+                "minimumStake":0.40
+            }
+        },
+        "volatility":[
+            "High"
+        ],
+        "provider":[
+            "Gamomat"
+        ]
+    },
+    "BookOfCrazyChickenTest":{
+        "name":"BookOfCrazyChickenTest",
+        "displayName":"Book of Crazy Chicken",
+        "playURL":"/games/bookofcrazychicken/play",
+        "image":"/cms/5e6a5f178b11d3002c154f67/icon-320and250_BookOfCrazyChicken.jpg",
+        "detailURL":"/games/bookofcrazychicken",
+        "calloutText":"New Game",
+        "currencyData":{
+            "EUR":{
+                "minimumStake":0.30
+            }
+        },
+        "volatility":[
+            "High"
+        ],
+        "provider":[
+            "Gamomat"
+        ]
+    }
+}

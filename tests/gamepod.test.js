@@ -8,7 +8,7 @@ describe('Tests for GamePod', () => {
         const context = shallow(<GamePod />);
         expect(context.find('.supplier').text()).toBe('');
         expect(context.find('.name').text()).toBe('');
-        expect(context.find('.stake').text()).toBe('€ min. Stake');
+        expect(context.find('.stake').text()).toBe('No stake');
     });
 
     test('When passing props, it is shown with specified data', () => {

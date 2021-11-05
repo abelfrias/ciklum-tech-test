@@ -2,7 +2,6 @@ import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 
 import RadioButton from '../../Atoms/RadioButton';
-import caretIcon from '../../../assets/icons/caret.svg';
 import style from './style.scss';
 
 const Dropdown = (props) => {
@@ -47,8 +46,8 @@ const Dropdown = (props) => {
     return (
         <div {...generateClassProp()} ref={dropdownRef}>
             <div class={style.selection}  onclick={() => setOpen(!open)}>
-                <img src={caretIcon} alt="Caret"/>
-                <strong>{props.title || 'SELECT'}</strong>
+                <i class={`${style.caretIcon}`}>1</i>
+                <span class={style.title}>{props.title || 'SELECT'}</span>
             </div>
             <div class={style.menu}>
                 {

@@ -14,10 +14,11 @@
     font-size: 3rem;
     color: $lottoland-white;
     margin: 1rem 0 2.57rem 0;
+    font-weight: 900;
 }
 
 .gamesGroup {
-    margin: 11rem -3.4rem 0 -3.4rem;
+    margin: 9.5rem -3.4rem 0 -3.4rem;
     padding-top: 2rem;
 }
 
@@ -31,8 +32,9 @@
     }
 
     .gamesGroup {
-        margin-top: 9rem;
+        margin-top: 8rem;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 0;
     }
 }

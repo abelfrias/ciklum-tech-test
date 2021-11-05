@@ -1,21 +1,26 @@
 @import './colors.scss';
 
 @font-face {
-    font-family: 'Daxline Pro';
-    src: url('../assets/fonts/daxlinepro-light.woff2');
-    font-weight: 300;
+    font-family: 'll-icon-font';
+    src: local('ll-icon-font'),
+         url('../assets/fonts/ll-icon-font/ll-icon-font.woff') format('woff'),
+         url('../assets/fonts/ll-icon-font/ll-icon-font.ttf') format('truetype'),
+         url('../assets/fonts/ll-icon-font/ll-icon-font.eot') format('embedded-opentype'),
+         url('../assets/fonts/ll-icon-font/ll-icon-font.svg#ll-icon-font') format('svg');
 }
 
-@font-face {
-    font-family: 'Daxline Pro';
-    src: url('../assets/fonts/daxlinepro-medium.woff2');
-    font-weight: 500;
-}
+$weights: 200, 400, 500, 700, 800, 900;
 
-@font-face {
-    font-family: 'Daxline Pro';
-    src: url('../assets/fonts/daxlinepro-black.woff2');
-    font-weight: 900;
+@each $weight in $weights {
+    @font-face {
+        font-family: 'ff-daxline-pro';
+        src: local('ff-daxline-pro'),
+             url('../assets/fonts/ff-daxline-pro/#{$weight}/normal.woff2') format('woff2'),
+             url('../assets/fonts/ff-daxline-pro/#{$weight}/normal.woff') format('woff'),
+             url('../assets/fonts/ff-daxline-pro/#{$weight}/normal.ttf') format('truetype'),
+             url('../assets/fonts/ff-daxline-pro/#{$weight}/normal.eot') format('embedded-opentype');
+        font-weight: $weight;
+    }
 }
 
 html, body {
@@ -24,7 +29,7 @@ html, body {
     padding: 0;
     margin: 0;
     background: $gradient-casino-background;
-    font-family: 'Daxline Pro', 'Helvetica Neue', arial, sans-serif;
+    font-family: 'ff-daxline-pro', 'Helvetica Neue', arial, sans-serif;
     font-size: 7px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

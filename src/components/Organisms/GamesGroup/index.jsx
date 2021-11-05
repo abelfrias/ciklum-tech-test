@@ -17,10 +17,10 @@ const GamesGroup = (props) => {
         <section class={`${props.class ? `${props.class} ` : ''}${style.gamesGroup}`}>
             {games.map((game) => (
                 <GamePod
-                    name={game.name}
-                    supplier={game.supplier}
-                    stake={game.stake}
-                    thumbnailUrl={game.thumbnailUrl}/>
+                    name={game.displayName}
+                    supplier={game.provider?.[0]}
+                    stake={game.currencyData?.EUR?.minimumStake}
+                    thumbnailUrl={`https://lottoland.asia${game.image}`}/>
             ))}
         </section>
     );
