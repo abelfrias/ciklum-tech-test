@@ -5,7 +5,7 @@ This is a technical test for applying to Senior Front-End Developer role at Cikl
 
 Regarding the layout, the website is responsive and has been tested with a minimum width of 320px and a maximum greater or equal to 1280px. The breakpoint that switches between mobile and desktop layout is at 768px. SCSS has been used for styling, and some features like variables (for colors) and loops (for repetitive font-face declarations) have been also employed.
 
-## CLI Commands
+## Installation and running
 The app can be run using the following Preact CLI commands:
 ``` bash
 # install dependencies
