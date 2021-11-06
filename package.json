@@ -44,9 +44,12 @@
       "<rootDir>/tests/__mocks__/setupTests.js"
     ],
     "modulePathIgnorePatterns": [
-        "<rootDir>/src/index.js",
-        "<rootDir>/src/sw.js",
-        "<rootDir>/src/components/app.js"
+      "<rootDir>/src/index.js",
+      "<rootDir>/src/sw.js",
+      "<rootDir>/src/components/app.js"
+    ],
+    "testMatch": [
+      "**/tests/*.(js|ts|tsx)"
     ]
   }
 }
