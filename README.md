@@ -8,21 +8,48 @@ Regarding the layout, the website is responsive and has been tested with a minim
 ## Installation and running
 The app can be run using the following Preact CLI commands:
 ``` bash
-# install dependencies
+# Install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# Serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
+# Build for production with minification
 npm run build
 
-# test the production build locally
+# Test the production build locally
 npm run serve
 
-# run tests with jest and enzyme
+# Run tests with jest and enzyme
 npm run test
 
-# run tests with jest and enzyme, showing coverage results
+# Run tests with jest and enzyme, showing coverage results
 npm run test -- --coverage
 ```
+
+## Running with Docker
+In order to run the app in DEV mode with Docker, the following commands must be executed (might need to run with `sudo` in Linux):
+``` bash
+# Build Docker image
+docker build -t lottoland-games:dev .
+
+# Serve detached at localhost:8081
+docker run -itd --rm -v ${PWD}:/app -v /app/node_modules -p 8081:8080 lottoland-games:dev
+```
+
+When using Windows, PowerShell must be used in order to get the current directory with `${PWD}`. If using the Windows Command Line (cmd), `${PWD}` should be replaced with `%cd%`. 
+
+The `docker run` command will output an ID that can be used to stop the process from running. As an example:
+
+``` bash
+# Run the container
+~]$ docker run -itd --rm -v ${PWD}:/app -v /app/node_modules -p 8081:8080 lottoland-games:dev
+5c6322e49ef013e03aff555e4d69226bb4ea9f788088a0be050c7e8fb7248440
+
+# Stop it
+~]$ docker stop 5c6322e49ef013e03aff555e4d69226bb4ea9f788088a0be050c7e8fb7248440
+5c6322e49ef013e03aff555e4d69226bb4ea9f788088a0be050c7e8fb7248440
+```
+
+### Known issues
+- Right now, running the app with Docker breaks hot reload due to missing configuration.
