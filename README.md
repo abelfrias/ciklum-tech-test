@@ -52,4 +52,4 @@ The `docker run` command will output an ID that can be used to stop the process 
 ```
 
 ### Known issues
-- Right now, running the app with Docker breaks hot reload due to missing configuration.
+- Right now, running the app with Docker breaks hot reload due to missing configuration. In order to see changes made in the code, the browser must be manually refreshed.
